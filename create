@@ -1,0 +1,21 @@
+#!/bin/sh
+
+SITE_DIR="/Users/Jacob/Documents/Forge/$1"
+
+mkdir -p $SITE_DIR
+
+cd $SITE_DIR
+
+mkdir tmp
+
+cd tmp
+
+wget https://ghost.org/zip/ghost-latest.zip --no-check-certificate
+
+unzip -d .. ghost-latest.zip
+
+cd ..
+
+rm -rf tmp
+
+npm install --production

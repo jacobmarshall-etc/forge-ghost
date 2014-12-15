@@ -1,0 +1,7 @@
+#!/bin/sh
+
+SITE_DIR="/Users/Jacob/Documents/Forge/$1"
+
+cd $SITE_DIR
+
+npm start --production
