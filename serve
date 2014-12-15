@@ -1,6 +1,6 @@
 #!/bin/sh
 
-SITE_DIR="/Users/Jacob/Documents/Forge/$1"
+SITE_DIR="/home/forge/$1"
 
 cd $SITE_DIR
 
